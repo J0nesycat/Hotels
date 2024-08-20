@@ -1,0 +1,11 @@
+{% block content %}
+
+<h1>Room type: {{ room.title }}</h1>
+<h1>Room Number: {{ room.room_number }}</h1>
+<h1>Number Of Guests: {{ room.number_of_guests }}</h1>
+<h1>Price: {{ room.price }} per night</h1>
+<h1>Size: {{ room.size }}</h1>
+<a href="{% url 'reserve' %}">Reserve this room</a>
+
+
+{% endblock content %}

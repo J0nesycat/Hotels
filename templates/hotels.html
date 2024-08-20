@@ -1,0 +1,8 @@
+{% block content %}
+<h1>Our Hotels</h1>
+<h1>
+    {% for hotel in hotel_list %}
+        <li><a href="{{ hotel.get_absolute_url }}">{{ hotel.title }}</a></li>
+    {% endfor %}
+</h1>
+{% endblock content %}

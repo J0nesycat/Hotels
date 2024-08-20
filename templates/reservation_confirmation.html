@@ -1,0 +1,16 @@
+
+
+
+
+{% block content %}
+<h1>Reservation Confirmation</h1>
+<p>Confirmation Number: {{ object.confirmation_number }}</p>
+<p>Full Name: {{ object.full_name }}</p>
+<p>Check-in Date: {{ object.check_in_date }}</p>
+<p>Check-out Date: {{ object.check_out_date }}</p>
+<p>Hotel: {{ object.hotel.title }}</p>
+<p>Room: {{ object.room.title }}</p>
+
+<p>Total Price (including 17% tax): {{ total_price }}</p>
+<a href="{% url 'home' %}">Go back to home</a>
+{% endblock content %}
